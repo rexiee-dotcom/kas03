@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battery Swapping Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     body {
+      background: linear-gradient(134deg, rgb(117, 165, 139), rgb(93, 105, 137), rgb(108, 42, 65));
+    }
+
+    .quiz-container {
+      max-width: 700px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question h4 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: block;
+      background: #2ecc71;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin: 20px auto 0;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #27ae60;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin: 15px 200px 50px 200px; border-radius: 10px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: x-large;margin-left: 20px; font-weight: 700; color: rgb(40, 199, 74);">EVswap</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 d-flex justify-content-around" style="display: flex; justify-content: space-around; align-items: center;">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="howitwork.html">How it works?</a></li>
+         <li class="nav-item"><a class="nav-link" href="quix.html">Quiz</a></li>
+         <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+         <li class="nav-item"><a class="nav-link" href="news.html">NEWS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="quiz-container">
+    <h2>Battery Swapping Technique Quiz</h2>
+
+    <form id="quizForm">
+      <div class="question">
+        <h4>1. What is the primary benefit of battery swapping over conventional EV charging?</h4>
+        <label><input type="radio" name="q1" value="B"> Faster turnaround time</label>
+        <label><input type="radio" name="q1" value="A"> Lower battery capacity</label>
+        <label><input type="radio" name="q1" value="C"> Reduced vehicle range</label>
+        <label><input type="radio" name="q1" value="D"> Increased emissions</label>
+      </div>
+
+      <div class="question">
+        <h4>2. What must be done before removing an EV battery?</h4>
+        <label><input type="radio" name="q2" value="C"> Power off the vehicle</label>
+        <label><input type="radio" name="q2" value="A"> Increase vehicle speed</label>
+        <label><input type="radio" name="q2" value="B"> Turn on the headlights</label>
+        <label><input type="radio" name="q2" value="D"> Remove the tires</label>
+      </div>
+
+      <div class="question">
+        <h4>3. Battery swapping stations are designed to be:</h4>
+        <label><input type="radio" name="q3" value="C"> Fully automated or semi-automated</label>
+        <label><input type="radio" name="q3" value="A"> Used only by technicians</label>
+        <label><input type="radio" name="q3" value="B"> Compatible with all vehicle types</label>
+        <label><input type="radio" name="q3" value="D"> Mobile units installed on cars</label>
+      </div>
+
+      <div class="question">
+        <h4>4. Which of the following is NOT a challenge of battery swapping?</h4>
+        <label><input type="radio" name="q4" value="B"> Fast charging</label>
+        <label><input type="radio" name="q4" value="A"> Battery standardization</label>
+        <label><input type="radio" name="q4" value="C"> High initial infrastructure cost</label>
+        <label><input type="radio" name="q4" value="D"> Battery ownership concerns</label>
+      </div>
+
+      <div class="question">
+        <h4>5. In a typical swap, what happens to the depleted battery?</h4>
+        <label><input type="radio" name="q5" value="B"> It is recharged for future use</label>
+        <label><input type="radio" name="q5" value="A"> It is discarded</label>
+        <label><input type="radio" name="q5" value="C"> It is stored permanently in the vehicle</label>
+        <label><input type="radio" name="q5" value="D"> It powers the charging station</label>
+      </div>
+     
+<div class="question">
+  <h4>6. Battery swapping can be done without disconnecting the EV from power.</h4>
+  <label><input type="radio" name="q6" value="False"> False</label>
+  <label><input type="radio" name="q6" value="True"> True</label>
+</div>
+
+<div class="question">
+  <h4>7. All EVs today support battery swapping by default.</h4>
+  <label><input type="radio" name="q7" value="False"> False</label>
+  <label><input type="radio" name="q7" value="True"> True</label>
+</div>
+
+<div class="question">
+  <h4>8. Battery swapping helps reduce EV downtime.</h4>
+  <label><input type="radio" name="q8" value="True"> True</label>
+  <label><input type="radio" name="q8" value="False"> False</label>
+</div>
+
+<div class="question">
+  <h4>9. Robotic arms are sometimes used in automated swapping stations.</h4>
+  <label><input type="radio" name="q9" value="True"> True</label>
+  <label><input type="radio" name="q9" value="False"> False</label>
+</div>
+
+<div class="question">
+  <h4>10. Swapped batteries are always owned by the EV owner.</h4>
+  <label><input type="radio" name="q10" value="False"> False</label>
+  <label><input type="radio" name="q10" value="True"> True</label>
+</div>
+
+
+      <button type="button" class="btn" onclick="checkAnswers()">Submit Quiz</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+  q1: 'B',
+  q2: 'C',
+  q3: 'C',
+  q4: 'B',
+  q5: 'B',
+  q6: 'False',
+  q7: 'False',
+  q8: 'True',
+  q9: 'True',
+  q10: 'False'
+};
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === correctAnswers[q]) {
+          score++;
+        }
+      }
+
+      document.getElementById('result').innerText = 
+        `You scored ${score} out of ${total}!`;
+    }
+  </script>
+
+</body>
+</html>
